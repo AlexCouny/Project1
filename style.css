@@ -441,6 +441,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 .a-image {
     width: 400px;
@@ -454,7 +456,7 @@ form {
 }
 .form_label {
     margin-left: 20px;
-    color: #000;
+    color: #fff;
     position: relative;
 }
 .form_label1 {
@@ -475,13 +477,13 @@ form {
 }
 h1,h2 {
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 .form_name {
     width: 290px;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    color: #000;
+    color: #fff;
 }
 .form_name::placeholder {
     color: #ffffff7e;
@@ -490,7 +492,7 @@ h1,h2 {
     width: 270px;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    color: #000;
+    color: #fff;
 }
 .form_surname::placeholder {
     color: #ffffff7e;
@@ -499,7 +501,7 @@ h1,h2 {
     width: 270px;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    color: #000;
+    color: #fff;
 }
 .form_age::placeholder {
     color: #ffffff7e;
@@ -508,7 +510,7 @@ h1,h2 {
     width: 255px;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    color: #000;
+    color: #fff;
 }
 .form_tel::placeholder {
     color: #ffffff7e;
@@ -517,7 +519,7 @@ h1,h2 {
     width: 250px;
     background: transparent;
     border-radius: 10px 10px 10px 10px;
-    color: #000;
+    color: #fff;
 }
 .form_email::placeholder {
     color: #ffffff7e;
@@ -540,9 +542,11 @@ h1,h2 {
 .form_submit:hover {
     font-size: 17px;
 }
+.form_label1 {
+    color: #fff;
+}
 /* ----Section 4 video---- */
 .a-block4 {
-    background-image: url;
     width: 100%;
     height: 450px;
     display: flex;
@@ -555,7 +559,7 @@ h1,h2 {
     font-weight: 400;
     padding-bottom: 70px;
     font-size: 30px;
-    color: aquamarine;
+    color: rgb(41, 60, 204);
 }
 .a-block4__txt {
     font-family: cursive;
