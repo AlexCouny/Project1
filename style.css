@@ -8,8 +8,9 @@
     text-decoration: none;
 }
 .L_header{
+    margin: 0 auto;
     background-color: #183764;
-    width: 100%;
+    width: 1200px;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -25,7 +26,7 @@
     height: 109px;
 }
 .L_logo1 {
-    top: 15px;
+    width: 45px;
     margin-right: 20px;
     margin-bottom: 10px;
     margin-left: 15px;
@@ -38,7 +39,7 @@
     padding: 0px 30px 0px 0px;
     align-items:center ;
     margin-top: 16px;
-
+    cursor: pointer;
 }
 .L_a1 {
     color: aliceblue;
@@ -57,12 +58,28 @@
     text-decoration: none;
     margin-top: 25px;
     transition: 0.5s;
+    position: relative;
+    height: 27px;
 }
 .L_a1:hover{
     color: rgba(255, 202, 66, 1);
-
+}
+.L_a1::before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    left: 0;
+    bottom: -3px;
+    background-color: coral;
+    transition: 0.3s;
+}
+.L_a1:hover::before {
+    width: 100%;
+    height: 3%;
 }
 .L_button {
+    cursor: pointer;
     margin-left: 30px;
     width: 130px;
     height: 50px;
@@ -80,41 +97,46 @@
 
 
 }
-/* -------- B L O C K  1 --------  */
 .n_main {
+    background-image: url(./images/24manguel-superJumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 3200px;
 }
+
+/* -------- B L O C K  1 --------  */
+
 .wlcm_background{
-    width: 100%;
-    height: 1000px;
-    padding: 70px;
+    width: 1200px;
+    height: 100vh;
+    padding: 20px;
     background-color: rgba(27, 55, 100, 1);
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+    border: 1px solid #000;
 }
 .welcome {
-    width: 1300px;
-    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 .wlcm_img {
-    width: 590px;
-    height: 800px;
+    width: 460px;
 }
 .wlcm_block {
     width: 590px;
     height: 510px;
-    margin-top: 150px;
-    margin-right:  75px;
-    margin-left: 40px;
+    margin-top: 50px;
+    margin-right:  50px;
+    margin-left: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -137,9 +159,8 @@
 }
 .wlcm_text {
     font-family: Cardo;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 36px;
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
@@ -149,14 +170,14 @@
 }
 .your_books_from {
     font-family: Cardo;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 400;
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 .the_best_writer {
     font-family: Cardo;
-    font-size: 64px;
+    font-size: 50px;
     font-weight: 400;
     text-align: left;
     color: rgba(255, 255, 255, 1);
@@ -174,48 +195,53 @@
     font-size: 18px;
     font-weight: 400;
     text-align: left;
-    margin-bottom: 60px;
     color: rgba(180, 199, 231, 1); 
 }
 .order_td {
     width: 590px;
     height: 90px;
-    margin-top: 60px;
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
 }
 .button_td {
-    width: 225px;
-    height: 70px;
+    width: 200px;
+    height: 60px;
     background-color: rgba(255, 202, 66, 1);
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
     color: rgba(27, 55, 100, 1);
     cursor: pointer;
+    transition: 0.5s;
+}
+.button_td:hover {
+    background-color: rgb(222, 118, 0);
 }
 .text_td {
-    width: 152px;
-    height: 31px;
     margin: 19px 50px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    transition: 0.4s;
+    cursor: pointer;
 }
 .txt_td {
     font-family: Cardo;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 400;
     text-align: center;
     color: rgba(255, 255, 255, 1);
 }
 .rectangle_td {
-    width: 152px;
+    width: 112px;
     height: 1px;
     background-color: rgba(255, 255, 255, 1);
 }
 .list {
     width: 590px;
     height: 110px;
-    padding: 40px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
     display: flex;
     align-items: left;
     flex-direction: row;
@@ -240,14 +266,14 @@
 }
 .page_txt {
     font-family: Cardo;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 .number_pages {
     font-family: Inter;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     text-align: left;
     margin: 12px 0;
@@ -268,14 +294,14 @@
 }
 .length_txt {
     font-family: Cardo;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 .length_hour {
     font-family: Inter;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
     text-align: left;
     margin: 12px 0;
@@ -296,32 +322,36 @@
 }
 .rating_txt {
     font-family: Cardo;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+
+font-weight: 400;
     text-align: left;
     color: rgba(255, 255, 255, 1);
 }
 .rating-1 {
     font-family: Inter;
-    font-size: 17px;
+font-size: 15px;
     font-weight: 400;
     text-align: left;
     margin: 12px 0;
     color: rgba(180, 199, 231, 1);
 }
 
+
+
 /* -------- B L O C K  2 --------  */
 
 
 
 .n_autors {
-    width: 100%;
+    width: 1200px;
     height: 600px;
     margin: 70px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    background-color: #fff;
 }
 .n_autors__title {
     font-family: Cardo;
@@ -332,14 +362,15 @@
     margin-bottom: 25px;
 }
 .n_autors__line{
-    width: 50px;
-    height: 3px;
+    width: 70px;
+    height: 5px;
     background-color: rgba(255, 202, 66, 1);
+    border: 1px solid rgba(255, 202, 66, 1);
 }
 .n_block {
-    width: 1300px;
+    width: 1200px;
     height: 500px;
-    margin: 70px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -352,6 +383,7 @@
     width: 630px;
     height: 380px;
     display: flex;
+    margin: 0 20px;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
@@ -364,8 +396,7 @@
     flex-direction: row;
 }
 .n_block_img {
-    width: 285px;
-    height: 382px;
+    width: 280px;
 }
 .n_block_1_box {
     width: 315px;
@@ -378,7 +409,7 @@
 .n_block_2_text {
     font-weight: 400px;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     font-family: 'Cardo', serif;
     font-size: 32px;
     color:rgba(27, 55, 100, 1);   
@@ -386,7 +417,7 @@
 }
 .n_block_2_text_2 {
     font-weight: 400px;
-    margin: 7px 30px;
+    margin: 7px 20px;
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     color: rgba(255, 202, 66, 1);
@@ -394,14 +425,14 @@
 }
 .n_block_2_text_3 {
     font-weight: 400px;
-    margin-left: 30px;
+    margin-left: 20px;
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     text-align: left;
     color: rgba(150, 154, 160, 1);
 }
 .n_printed_book {
-    margin: 10px 30px;
+    margin: 10px 20px;
     display: flex;
     align-items: left;
     flex-direction: row;
@@ -420,14 +451,18 @@
     color:rgba(27, 55, 100, 1);    
 }
 .order_now_button {
-    width: 206px;
-    height: 66px;
-    margin: 10px 30px;
+    width: 200px;
+    height: 60px;
+    margin: 10px 20px;
     border: 2px solid rgba(255, 202, 66, 1);
     background-color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
-
+.order_now_button:hover{
+    background-color: rgb(222, 118, 0);
+    color: #fff;
+}
 /* CARD 2 */
 
 .n_block_2_box {
@@ -445,7 +480,7 @@
     align-content: center;
 }
 .a-image {
-    width: 400px;
+    width: 300px;
 }
 form {
     border: 3px solid #000;
@@ -556,12 +591,13 @@ h1,h2 {
 }
 .a-block4__title {
     font-family: fantasy;
-    font-weight: 400;
     padding-bottom: 70px;
-    font-size: 30px;
-    color: rgb(41, 60, 204);
+    font-size: 32px;
+    font-weight: 100;
+    color: rgb(24, 183, 189);
 }
 .a-block4__txt {
+    color: #fff;
     font-family: cursive;
     font-weight: 400;
     font-size: 20px;
