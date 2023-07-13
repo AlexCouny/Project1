@@ -112,7 +112,7 @@ body {
 
 .wlcm_background{
     width: 1200px;
-    height: 100vh;
+    height: 670px;
     padding: 20px;
     background-color: rgba(27, 55, 100, 1);
     display: flex;
@@ -617,7 +617,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px auto;
+    margin: 30px auto;
 }
 .footer__blockM{
     display: flex;
@@ -678,6 +678,7 @@ border-radius: 5px;
 }
 .m-pages {
     margin-left: 12px;
+    margin-top: 30px;
 }
 .m-image__media {
     margin-left: 12px;
@@ -689,6 +690,7 @@ border-radius: 5px;
     color: #fff;
 }
 .footer2__more-books {
+    margin-top: 30px;
 }
 .books__markets-title {
     color: #fff;
@@ -699,6 +701,7 @@ border-radius: 5px;
     color: #a09797;
 }
 .footer2__contact-us {
+    margin-top: 30px;
 }
 .contact__us-title {
 }
