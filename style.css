@@ -7,6 +7,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-image: url(./images/24manguel-superJumbo.jpg);
     background-size: cover;
@@ -404,6 +407,7 @@ font-size: 15px;
     height: 96px;
 }
 .n_block_2_text {
+    width: 220px;
     font-weight: 400px;
     margin-top: 20px;
     margin-left: 20px;
@@ -411,6 +415,20 @@ font-size: 15px;
     font-size: 32px;
     color:rgba(27, 55, 100, 1);   
     float: inline-start;
+    position: relative;
+}
+.n_block_2_text::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 10%;
+    background-color: #FFCA42;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.n_block_2_text:hover::before {
+    width: 90%;
 }
 .n_block_2_text_2 {
     font-weight: 400px;
@@ -421,6 +439,7 @@ font-size: 15px;
     float: inline-start;
 }
 .n_block_2_text_3 {
+    width: 220px;
     font-weight: 400px;
     margin-left: 20px;
     font-family: 'Inter', sans-serif;
@@ -572,6 +591,7 @@ h1,h2 {
     transition: 0.5s;
 } 
 .form_submit:hover {
+    background-color: #FFCA42;
     font-size: 17px;
 }
 .form_label1 {
@@ -661,6 +681,11 @@ margin:auto 0px  ;
     height: 50px;
     background-color: #1B3764;
     margin: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.body__button:hover {
+    background-color: #e55614;
 }
 .line__M:hover{
 width: 1200px;
@@ -668,9 +693,10 @@ border-radius: 5px;
 }
 .footer__block2{
     width: 100%;
-    height: 500px;
+    height: 270px;
     background-color: #1B3764;
-    height: 500px;
+}
+.footer__block2-no-creators {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -700,14 +726,75 @@ border-radius: 5px;
 .link-for-book__store {
     color: #a09797;
 }
+.book__store-name {
+    color: #a09797;
+    position: relative;
+}
+.book__store-name:hover {
+    color: #dcea24;
+}
+.book__store-name::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 10%;
+    left: 0;
+    bottom: 0;
+    background-color: #FFCA42;
+    transition: 0.5s;
+}
+.book__store-name:hover::before {
+    width: 60%;
+}
 .footer2__contact-us {
     margin-top: 30px;
 }
 .contact__us-title {
+    color: #fff;
 }
 .contact__us-list {
+    color: #151414;
 }
 .m-contact {
+    cursor: pointer;
+    color: #a09797;
 }
 .m-contacts {
+    color: #141313;
+    position: relative;
+}
+.m-contacts:hover {
+    color: #fff;
+}
+.m-contacts::before {
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 10%;
+    background-color: #a09797;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.m-contacts:hover::before {
+    width: 100%;
+}
+.footer__creators-M {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.line-M {
+    width: 500px;
+    height: 1px;
+    background-color: #dcea24;
+    margin-top: 70px;
+}
+.footer__creators-name-M {
+    color: #fff;
+    margin-top: 5px;
+}
+.footer__names-M {
+    color: rgb(236, 79, 79);
 }
