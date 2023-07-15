@@ -670,6 +670,7 @@ margin:auto 0px  ;
     font-size: 23px;
 }
 .input {
+    padding-left: 12px;
     width: 800px;
     height: 50px;
     color: rgba(213, 43, 43, 0.055);
@@ -686,6 +687,38 @@ margin:auto 0px  ;
 }
 .body__button:hover {
     background-color: #e55614;
+}
+/* -----Button Page----- */
+.thanks__body {
+    background-image: url(./images/stock-photo-young-adult-woman-at-computer-laptop-with-a-smile-fictional-location-arab-looking-wearing-headscarf-hijab-generative-ai-953266.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.thanks__txt {
+    margin-top: 70px;
+    color: #e41c11;
+    font-size: 50px;
+}
+.back__button {
+    border: 3px solid #fff;
+    background-color: #ffffff00;
+    font-size: 16px;
+    width: 320px;
+    padding: 23px;
+    border-radius: 40px;
+    margin-top: 60px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.back__button:hover {
+    background-color: #e41c11;
 }
 .line__M:hover{
 width: 1200px;
