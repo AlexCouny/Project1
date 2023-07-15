@@ -485,7 +485,114 @@ font-size: 15px;
     width: 315px;
     height: 350px;
 }
-/* ----Section 3 form---- */
+/* ---- Section 3 how to use ---- */
+.L_how_to_use {
+width: 100px;
+height: 1000px;
+}
+.L_text_dura {
+    width: 1300px;
+    height: 834.71875px;
+    top: 4165.359375px;
+    left: 70px;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    
+    }
+    .L_text {
+    width: 436px;
+    height: 51px;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    }
+    .L_text::before{
+    width: 40px;
+    height: 4px;
+    background-color: rgb(255, 187, 0);
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 260px;
+    transition: 1s;
+    
+    }
+    .L_text:hover::before{
+    width: 110%;
+    
+    }
+    .L_text::after{
+    width: 40px;
+    height: 4px;
+    background-color: rgb(255, 187, 0);
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 145px;
+    transition: 1s;
+    }
+    .L_text:hover::after{
+    width: 100%;
+    
+    }
+    .L_h1 {
+    }
+    .L_frame_main {
+    width: 665.453125px;
+    height: 651.71875px;
+    padding: 30px 0px 17.71875px 0px;
+    display: flex;
+    margin-top: 50px;
+    
+    }
+    .L_frame_main1 {
+    width: 665.453125px;
+    height: 302px;
+    padding: 0px 29.453125px 30.359375px 0px;
+    margin-left: 20px;
+    margin-top: 50px;
+    }
+    .L_frame_main2 {
+    width: 665.453125px;
+    height: 302px;
+    padding: 0px 29.453125px 30.359375px 0px;
+    margin-top: 50px;
+    }
+    .L_frame {
+    width: 303px;
+    height: 272px;
+    top: -0.359375px;
+    background-color: rgba(244, 248, 255, 1);
+    margin-bottom: 30px;
+    }
+    .L_numbers {
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+    .L_p {
+    margin-left: 20px;
+    width: 236px;
+    text-shadow: 1px 1px #00000032;
+    size: 20px;
+    }
+    .L_dura {
+    width: 535px;
+    height: 633px;
+    border:10px solid rgba(255, 202, 66, 1);
+    display: flex;
+    margin-top: 60px;
+    margin-left: 50px;
+    }
+    .L_dura1 {
+    width: 535px;
+    height: 702px;
+    left: 0;
+    }
+/* ----Section 4 form---- */
 .a-block3 {
     background-color: rgba(27, 55, 100, 1);
     height: 700px;
@@ -499,6 +606,7 @@ font-size: 15px;
     width: 300px;
 }
 form {
+    background-color: #00000088;
     border: 3px solid #000;
     border-radius: 30px 30px 30px 30px;
     width: 400px;
@@ -597,7 +705,7 @@ h1,h2 {
 .form_label1 {
     color: #fff;
 }
-/* ----Section 4 video---- */
+/* ----Section 5 video---- */
 .a-block4 {
     width: 100%;
     height: 450px;
