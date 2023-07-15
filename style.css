@@ -499,19 +499,19 @@ height: 1000px;
     padding: 20px 0px 0px 0px;
     display: flex;
     margin-bottom: 100px;
-    margin-top: 100px;
-    flex-direction: column;
     background-color: #183764;
     }
     .L_text {
-    width: 436px;
+    width: 1200px;
     height: 51px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 30px;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
     position: relative;
+    background-color: #183764;
+    display: flex;
     }
     .L_text::before{
     width: 40px;
@@ -520,12 +520,12 @@ height: 1000px;
     position: absolute;
     content: '';
     bottom: 0;
-    right: 200px;
+    right: 580px;
     bottom: 0;
     transition: 0.5s;
     }
     .L_text:hover::before{
-    width: 110%;
+    width: 40%;
     }
     .L_text::after{
     width: 40px;
@@ -534,12 +534,12 @@ height: 1000px;
     position: absolute;
     content: '';
     bottom: 0;
-    left: 200px;
+    left: 580px;
     bottom: 0;
     transition: 0.5s;
     }
     .L_text:hover::after{
-    width: 100%;
+    width: 40%;
     
     }
     .L_h1 {
@@ -590,10 +590,13 @@ height: 1000px;
     width: 505px;
     height: 622px;
     border: 10px solid #FFCA42;
-    margin-top: 27px;
+    display: inline;
+    margin: right;
+    margin-left: 15px;
+    margin-top: 50px;
     }
     .L_dura1 {
-    width: 455px;
+    width: 486px;
     height: 602px;
     }
 /* ----Section 4 form---- */
